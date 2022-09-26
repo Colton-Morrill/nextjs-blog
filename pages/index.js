@@ -6,6 +6,7 @@ import Date from '../components/date';
 
 import { getSortedPostsData } from '../lib/posts';
 
+
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
   return {
@@ -18,6 +19,9 @@ export async function getStaticProps() {
 export default function Home({ allPostsData }) {
   return (
     <Layout home>
+       <Head>
+          <title>Colton's NEXT.JS Blog</title>
+        </Head>
       {/* Keep the existing code here */}
 
       {/* Add this <section> tag below the existing <section> tag */}

@@ -1,3 +1,5 @@
-export default function handler(req, res) {
-    res.status(200).json({ text: 'Hello' });
-  }
+import axios from 'axios';
+
+export default async function handler(req, res) {
+  res.status(200).json({ name: 'John Doe' })
+}
